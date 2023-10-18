@@ -38,9 +38,7 @@ class NewsListWidget extends StatelessWidget {
           ),
           controller: scrollController,
           itemBuilder: (context, index) {
-            NewsEntity? newsWithIdTwo;
             if (news[index].id == '2') {
-              newsWithIdTwo = news[index];
             }
 
             return NewsCardWidget(news: news[index], newsForDetail: secondNews(news),);
